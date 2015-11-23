@@ -14,9 +14,9 @@ import java.util.logging.Logger;
  */
 public class Citac {
 private int minuty=0;
-private String minutyS;
+private String minutyString;
 private int hodiny=0;
-private String hodinyS;
+private String hodinyString;
 
     public Citac(int hodiny,int minuty) {
         this.hodiny=hodiny;
@@ -37,18 +37,18 @@ private String hodinyS;
         minuty++;
     }
          if (minuty<10){
-         minutyS="0"+minuty;    
+         minutyString="0"+minuty;    
          }
          else {
-             minutyS=""+minuty;
+             minutyString=""+minuty;
          }
          if (hodiny<10){
-             hodinyS="0"+hodiny;
+             hodinyString="0"+hodiny;
          }
          else{
-             hodinyS=""+hodiny;
+             hodinyString=""+hodiny;
          }
-        return "Čas: " + hodinyS + ":" + minutyS;
+        return "Čas: " + hodinyString + ":" + minutyString;
     }
 
 
